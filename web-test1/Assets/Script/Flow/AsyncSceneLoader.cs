@@ -9,6 +9,13 @@ public class AsyncSceneLoader : MonoBehaviour
     public string sceneName;
     public float progress;
 
+    void Start()
+    {
+        // 开始时就异步加载场景
+        LoadSceneAsync();
+    }
+
+
     // 异步加载场景的方法
     public void LoadSceneAsync()
     {
