@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb98130e5e0f07440850dfb1c0c6618c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoUrl: https://zhang-yi-jing.github.io/videotest/3.mp4
+  videoUrl: https://zhang-yi-jing.github.io/videotest/Bubble disappearance.mp4
 --- !u!328 &1091631549
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1039,11 +1039,11 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://zhang-yi-jing.github.io/videotest/3.mp4
+  m_Url: https://zhang-yi-jing.github.io/videotest/Bubble disappearance.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 0
   m_Looping: 0
   m_WaitForFirstFrame: 1
