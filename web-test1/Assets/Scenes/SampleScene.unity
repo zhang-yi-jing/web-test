@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52bf3234ee3c0a548bba137d2eb9e18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number: 3
+  number: 4
 --- !u!1 &1010129509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1045,7 @@ VideoPlayer:
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
-  m_SkipOnDrop: 0
+  m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
@@ -1662,7 +1662,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714887211}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c53cba871e766a489d186ff2314bccb, type: 3}
   m_Name: 
