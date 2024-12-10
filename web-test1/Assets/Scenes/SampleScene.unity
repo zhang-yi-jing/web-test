@@ -842,8 +842,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -180}
-  m_SizeDelta: {x: 1920, y: 1440}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727114252
 MonoBehaviour:
@@ -887,7 +887,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727114250}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52bf3234ee3c0a548bba137d2eb9e18e, type: 3}
   m_Name: 
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb98130e5e0f07440850dfb1c0c6618c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoUrl: https://zhang-yi-jing.github.io/videotest/Bubble disappearance.mp4
+  videoUrl: https://zhang-yi-jing.github.io/videotest/opening video.mp4
 --- !u!328 &1091631549
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://zhang-yi-jing.github.io/videotest/Bubble disappearance.mp4
+  m_Url: https://zhang-yi-jing.github.io/videotest/opening video.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -1058,7 +1058,7 @@ Transform:
   m_GameObject: {fileID: 1091631547}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.42245, y: -8.5790415, z: -1.5635066}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
