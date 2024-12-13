@@ -16,7 +16,7 @@ public class VidPlayer : MonoBehaviour
             videoPlayer.url = videoUrl;
             videoPlayer.playOnAwake = false;
             videoPlayer.Prepare();
-            videoPlayer.prepareCompleted += OnVideoPrepared;
+            //videoPlayer.prepareCompleted += OnVideoPrepared;
         }
     }
 
