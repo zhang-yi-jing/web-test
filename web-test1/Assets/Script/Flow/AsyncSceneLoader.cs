@@ -9,12 +9,13 @@ public class AsyncSceneLoader : MonoBehaviour
     public string sceneName;
     public float progress;
 
+    private AsyncOperation operation; // 将操作移到此处以便在整个类中使用
+
     void Start()
     {
         // 开始时就异步加载场景
         LoadSceneAsync();
     }
-
 
     // 异步加载场景的方法
     public void LoadSceneAsync()
@@ -34,7 +35,7 @@ public class AsyncSceneLoader : MonoBehaviour
     private IEnumerator LoadSceneCoroutine(string sceneName)
     {
         // 开始异步加载场景
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        operation = SceneManager.LoadSceneAsync(sceneName);
 
         // 防止加载完成后立即切换场景
         operation.allowSceneActivation = false;
@@ -48,20 +49,16 @@ public class AsyncSceneLoader : MonoBehaviour
             // 输出进度到控制台
             Debug.Log($"加载进度: {progress * 100:F0}%");
 
-            // 如果加载进度达到 90%（0.9），等待用户触发继续
-            if (operation.progress >= 0.9f)
-            {
-                Debug.Log("加载完成，等待激活场景...");
-
-                // 模拟按下空格键激活场景
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    operation.allowSceneActivation = true;
-                }
-            }
-
-            // 等待下一帧再继续
             yield return null;
+        }
+    }
+
+    // 外部调用方法，激活场景加载
+    public void ActivateScene()
+    {
+        if (operation != null)
+        {
+            operation.allowSceneActivation = true;
         }
     }
 }

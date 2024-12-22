@@ -16,6 +16,7 @@ public class VidPlayer : MonoBehaviour
             videoPlayer.url = videoUrl;
             videoPlayer.playOnAwake = false;
             videoPlayer.Prepare();
+            videoPlayer.prepareCompleted += IsCompleted;
             //videoPlayer.prepareCompleted += OnVideoPrepared;
         }
     }
@@ -23,5 +24,10 @@ public class VidPlayer : MonoBehaviour
     private void OnVideoPrepared(VideoPlayer source)
     {
         videoPlayer.Play();
+    }
+
+    private void IsCompleted(VideoPlayer source)
+    {
+        Debug.Log("isCompleted");
     }
 }
